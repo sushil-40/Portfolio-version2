@@ -91,6 +91,7 @@ a {
   backdrop-filter: blur(3px);
   /* letter-spacing: 0.1rem; */
   border: 1px solid aquamarine;
+  box-shadow: 0 0 20px aqua;
   animation: glow 2s infinite;
 }
 @keyframes glow {
@@ -104,6 +105,17 @@ a {
     box-shadow: 0 0 20px rgb(159, 233, 255);
   }
 }
+.moving-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .info-container h1 {
   color: white;
   letter-spacing: 0.3rem;
