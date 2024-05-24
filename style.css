@@ -208,7 +208,8 @@ a {
 
 .right-info-container {
   /* top: 10vh; */
-  justify-content: flex-end;
+
+  justify-content: space-between;
   align-items: flex-end;
 
   left: 100vw;
@@ -220,6 +221,10 @@ a {
   border-radius: 40px;
   border: 1px solid var(--color-aqua);
   box-shadow: 0 4px 8px rgb(150, 129, 241);
+}
+.right-info {
+  justify-content: center;
+  align-items: center;
 }
 .img {
   height: 570px;
