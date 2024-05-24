@@ -223,9 +223,54 @@ a {
   box-shadow: 0 4px 8px rgb(150, 129, 241);
 }
 .right-info {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  height: 50px;
+  width: 300px;
+  gap: 2rem;
 }
+.right-info .btnHire {
+  background: linear-gradient(
+    rgba(14, 81, 228, 0.877),
+    rgba(247, 150, 210, 0.644)
+  );
+  width: 80px;
+  height: 40px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-size: 18px;
+  border-radius: 5px;
+
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.right-info .btnHire:hover {
+  transform: scale(1.4);
+  box-shadow: 0 4px 8px rgb(240, 6, 38);
+}
+
+.right-info .btnChat {
+  background: linear-gradient(
+    rgba(14, 81, 228, 0.877),
+    rgba(247, 150, 210, 0.644)
+  );
+  width: 70px;
+  height: 40px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-size: 18px;
+  border-radius: 5px;
+
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.right-info .btnChat:hover {
+  transform: scale(1.4);
+  box-shadow: 0 4px 8px rgb(240, 6, 38);
+}
+
 .img {
   height: 570px;
   width: 350px;
