@@ -122,6 +122,12 @@ a {
   transform: translateX(-50%);
 }
 
+/* .animate-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideIn 2s ease-in-out;
+} */
+
 .info-container h1 {
   color: white;
   letter-spacing: 0.3rem;
