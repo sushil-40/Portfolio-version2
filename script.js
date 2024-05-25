@@ -36,3 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   moveDot();
 });
+
+//For text animation
+
+var typed = new Typed(".auto-type", {
+  strings: ["Programmer", "Web Designer", "Web Developer"],
+  typeSpeed: 120,
+  backSpeed: 100,
+  loop: true,
+});

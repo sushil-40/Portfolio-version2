@@ -125,18 +125,48 @@ a {
 .info-container h1 {
   color: white;
   letter-spacing: 0.3rem;
+
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideIn 2s ease-in-out;
 }
 .p1 {
   font-size: 1.3rem;
   font-weight: bold;
   margin: 0px 0px -20px 0px;
+
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideIn 1s ease-in-out;
 }
 .p2 {
   font-size: 1.3rem;
   font-weight: bold;
   margin: -20px 0px 10px 0px;
+
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideIn 3s ease-in-out;
 }
 
+/* Apply the animation to the auto-type span */
+.auto-type {
+  color: aquamarine;
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideIn 2s ease-in-out;
+}
+/* Keyframe animation for the text flow */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .social-links {
   gap: 1rem;
   font-size: 25px;
@@ -273,10 +303,10 @@ a {
 
 .img {
   height: 570px;
-  width: 350px;
+  width: 300px;
   display: flex;
-
-  padding-left: 30px;
+  margin-left: -10px;
+  /* padding-left: 20px; */
 
   align-items: flex-start;
 }
