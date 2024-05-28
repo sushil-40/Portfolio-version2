@@ -364,6 +364,55 @@ a {
 
   align-items: flex-start;
 }
+
+.grid-right-info {
+  height: 450px;
+  width: 500px;
+  /* background: yellowgreen; */
+  display: grid;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 5px; */
+  grid-template-areas:
+    "hexa1 hexa1 hexa2"
+    "hexa3 hexa4 hexa5";
+}
+.hexa1 {
+  background: green;
+  grid-area: hexa1;
+  height: 150px;
+  width: 100px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+.hexa2 {
+  background: rgb(89, 20, 129);
+  grid-area: hexa2;
+  height: 150px;
+  width: 100px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+.hexa3 {
+  background: rgb(0, 102, 128);
+  grid-area: hexa3;
+  height: 150px;
+  width: 100px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+.hexa4 {
+  background: rgb(73, 194, 43);
+  grid-area: hexa4;
+  height: 150px;
+  width: 100px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+.hexa5 {
+  background: rgb(128, 0, 0);
+  grid-area: hexa5;
+  height: 150px;
+  width: 100px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
 /* <!-- nav bar --> */
 
 header {
