@@ -51,6 +51,9 @@ a {
   min-height: 100vh;
 }
 
+.hidden {
+  display: none;
+}
 /* .jaro-<uniquifier> {
   font-family: "Jaro", sans-serif;
   font-optical-sizing: auto;
@@ -107,6 +110,51 @@ a {
     box-shadow: 0 0 20px rgb(159, 233, 255);
   }
 }
+
+/* *************** */
+
+.ball {
+  background: radial-gradient(white, aqua);
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  box-shadow: inset 0px 10px 50px 10px #00ffff70, 0px 0px 30px 6px whitesmoke;
+
+  position: absolute;
+  left: -5px;
+  top: -5px;
+
+  animation: circle 18s infinite linear;
+}
+@keyframes circle {
+  0% {
+    left: -5px;
+    top: -5px;
+  }
+  /* 5% {
+    top: 350px;
+    background: yellow;
+  } */
+
+  25% {
+    left: 542px;
+    top: -5px;
+  }
+  50% {
+    left: 542px;
+    top: 292px;
+  }
+  75% {
+    left: -5px;
+    top: 292px;
+  }
+  100% {
+    left: -5px;
+    top: -5px;
+  }
+}
+/* ************** */
+
 .moving-dot {
   width: 8px;
   height: 8px;
