@@ -404,8 +404,9 @@ a {
 }
 .hexa1 {
   background: rgba(69, 135, 151, 0.842);
-
+  border: 2px solid aqua;
   opacity: 0.5;
+
   /* border: 2px solid rgb(221, 22, 22); */
   grid-area: hexa1;
   height: 150px;
@@ -414,6 +415,7 @@ a {
 }
 .hexa2 {
   background: rgba(69, 135, 151, 0.842);
+  border: 2px solid aqua;
 
   grid-area: hexa2;
   height: 150px;
@@ -424,6 +426,8 @@ a {
 .hexa3 {
   /* background: rgb(0, 102, 128); */
   background: rgba(69, 135, 151, 0.842);
+  border: 2px solid aqua;
+
   grid-area: hexa3;
   height: 150px;
   width: 100px;
@@ -432,6 +436,7 @@ a {
 }
 .hexa4 {
   background: rgba(69, 135, 151, 0.842);
+  border: 2px solid aqua;
 
   grid-area: hexa4;
   height: 150px;
@@ -441,6 +446,7 @@ a {
 }
 .hexa5 {
   background: rgba(69, 135, 151, 0.842);
+  border: 2px solid aqua;
 
   grid-area: hexa5;
   height: 150px;
