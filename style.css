@@ -369,48 +369,83 @@ a {
   height: 450px;
   width: 500px;
   /* background: yellowgreen; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  background-image: url("./assets/sushil.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background: red; */
+  margin: 10px 10px 50px 10px;
+  /* object-fit: cover; */
+  /* gap: 5px; */
+  /* grid-template-areas: "hexa1 hexa1 hexa2"; */
+}
+.grid-right-info1 {
+  background: transparent;
+  display: grid;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  grid-gap: 20px;
+  grid-template-areas: "hexa1 hexa2";
+}
+.grid-right-info2 {
+  /* background: yellowgreen; */
   display: grid;
   justify-content: baseline;
   align-items: center;
   flex-direction: column;
   /* gap: 5px; */
-  grid-template-areas:
-    "hexa1 hexa1 hexa2"
-    "hexa3 hexa4 hexa5";
+  grid-gap: 20px;
+  grid-template-areas: "hexa3 hexa4 hexa5";
 }
 .hexa1 {
-  background: green;
+  background: rgba(69, 135, 151, 0.842);
+
+  opacity: 0.5;
+  /* border: 2px solid rgb(221, 22, 22); */
   grid-area: hexa1;
   height: 150px;
   width: 100px;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
 .hexa2 {
-  background: rgb(89, 20, 129);
+  background: rgba(69, 135, 151, 0.842);
+
   grid-area: hexa2;
   height: 150px;
   width: 100px;
+  opacity: 0.5;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
 .hexa3 {
-  background: rgb(0, 102, 128);
+  /* background: rgb(0, 102, 128); */
+  background: rgba(69, 135, 151, 0.842);
   grid-area: hexa3;
   height: 150px;
   width: 100px;
+  opacity: 0.5;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
 .hexa4 {
-  background: rgb(73, 194, 43);
+  background: rgba(69, 135, 151, 0.842);
+
   grid-area: hexa4;
   height: 150px;
   width: 100px;
+  opacity: 0.5;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
 .hexa5 {
-  background: rgb(128, 0, 0);
+  background: rgba(69, 135, 151, 0.842);
+
   grid-area: hexa5;
   height: 150px;
   width: 100px;
+  opacity: 0.5;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
 /* <!-- nav bar --> */
