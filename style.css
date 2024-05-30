@@ -413,8 +413,36 @@ a {
   width: 100px;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
+.hire-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30%;
+  font-size: 15px;
+  /* padding-top: 40px; */
+  color: rgba(0, 0, 0, 0.253);
+  text-shadow: 2px 2px aqua;
+}
+.icon-pointer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+.hexa1:hover {
+  transform: scale(1.6);
+  opacity: 1;
+  transition: all 2s ease-in-out;
+
+  .icon-pointer {
+    transform: scale(1.5);
+    transition: all 3s ease-in-out;
+    /* color: green; */
+    text-shadow: 0 4px 8px rgba(38, 24, 100, 0.664);
+  }
+}
 .hexa2 {
-  background: rgba(69, 135, 151, 0.842);
+  background: rgba(20, 47, 54, 0.842);
   border: 2px solid aqua;
 
   grid-area: hexa2;
@@ -422,6 +450,18 @@ a {
   width: 100px;
   opacity: 0.5;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+.hexa2:hover {
+  transform: scale(1.6);
+  opacity: 1;
+  transition: all 2s ease-in-out;
+
+  .icon-pointer {
+    transform: scale(1.5);
+    transition: all 3s ease-in-out;
+    /* color: green; */
+    text-shadow: 0 4px 8px rgba(38, 24, 100, 0.664);
+  }
 }
 .hexa3 {
   /* background: rgb(0, 102, 128); */
@@ -434,6 +474,18 @@ a {
   opacity: 0.5;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
+.hexa3:hover {
+  transform: scale(1.6);
+  opacity: 1;
+  transition: all 2s ease-in-out;
+
+  .icon-pointer {
+    transform: scale(1.5);
+    transition: all 3s ease-in-out;
+    /* color: green; */
+    text-shadow: 0 4px 8px rgba(38, 24, 100, 0.664);
+  }
+}
 .hexa4 {
   background: rgba(69, 135, 151, 0.842);
   border: 2px solid aqua;
@@ -444,6 +496,18 @@ a {
   opacity: 0.5;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
+.hexa4:hover {
+  transform: scale(1.6);
+  opacity: 1;
+  transition: all 2s ease-in-out;
+
+  .icon-pointer {
+    transform: scale(1.5);
+    transition: all 3s ease-in-out;
+    /* color: green; */
+    text-shadow: 0 4px 8px rgba(38, 24, 100, 0.664);
+  }
+}
 .hexa5 {
   background: rgba(69, 135, 151, 0.842);
   border: 2px solid aqua;
@@ -453,6 +517,18 @@ a {
   width: 100px;
   opacity: 0.5;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+.hexa5:hover {
+  transform: scale(1.6);
+  opacity: 1;
+  transition: all 2s ease-in-out;
+
+  .icon-pointer {
+    transform: scale(1.5);
+    transition: all 3s ease-in-out;
+    /* color: green; */
+    text-shadow: 0 4px 8px rgba(38, 24, 100, 0.664);
+  }
 }
 /* <!-- nav bar --> */
 
