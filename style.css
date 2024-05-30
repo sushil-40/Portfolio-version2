@@ -441,6 +441,8 @@ a {
     text-shadow: 0 4px 8px rgba(38, 24, 100, 0.664);
   }
 }
+
+/*hexa2 */
 .hexa2 {
   background: rgba(20, 47, 54, 0.842);
   border: 2px solid aqua;
@@ -451,16 +453,33 @@ a {
   opacity: 0.5;
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
+
+.chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30%;
+  font-size: 15px;
+  /* padding-top: 40px; */
+  color: rgba(0, 0, 0, 0.253);
+  text-shadow: 2px 2px aqua;
+}
+.icon-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
 .hexa2:hover {
   transform: scale(1.6);
   opacity: 1;
   transition: all 2s ease-in-out;
 
-  .icon-pointer {
+  .icon-chat {
     transform: scale(1.5);
     transition: all 3s ease-in-out;
     /* color: green; */
-    text-shadow: 0 4px 8px rgba(38, 24, 100, 0.664);
+    text-shadow: 0 4px 8px rgba(248, 141, 19, 0.63);
   }
 }
 .hexa3 {
