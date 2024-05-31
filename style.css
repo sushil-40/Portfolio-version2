@@ -420,8 +420,9 @@ a {
   margin-top: 30%;
   font-size: 15px;
   /* padding-top: 40px; */
-  color: rgba(0, 0, 0, 0.253);
-  text-shadow: 2px 2px aqua;
+  color: #ffffff;
+
+  text-shadow: 1px 1px aqua;
 }
 .icon-pointer {
   display: flex;
@@ -461,8 +462,9 @@ a {
   margin-top: 30%;
   font-size: 15px;
   /* padding-top: 40px; */
-  color: rgba(0, 0, 0, 0.253);
-  text-shadow: 2px 2px aqua;
+  color: #ffffff;
+
+  text-shadow: 1px 1px aqua;
 }
 .icon-chat {
   display: flex;
@@ -502,8 +504,9 @@ a {
   margin-top: 20%;
   font-size: 15px;
   /* padding-top: 40px; */
-  color: rgba(0, 0, 0, 0.253);
-  text-shadow: 2px 2px aqua;
+  color: #ffffff;
+
+  text-shadow: 1px 1px aqua;
 }
 .grad {
   color: orangered;
@@ -547,8 +550,9 @@ a {
   margin-top: 20%;
   font-size: 15px;
   /* padding-top: 40px; */
-  color: rgba(0, 0, 0, 0.253);
-  text-shadow: 2px 2px aqua;
+  color: #ffffff;
+
+  text-shadow: 1px 1px aqua;
 }
 .proj-completed {
   color: orangered;
@@ -591,9 +595,13 @@ a {
   text-align: center;
   margin-top: 20%;
   font-size: 15px;
+  font-weight: bolder;
   /* padding-top: 40px; */
-  color: rgba(0, 0, 0, 0.253);
-  text-shadow: 2px 2px aqua;
+  /* color: #f0f0f0; */
+  /* color: rgba(0, 0, 0, 0.253); */
+  color: #ffffff;
+
+  text-shadow: 1px 1px aqua;
 }
 .experience {
   color: orangered;
@@ -615,7 +623,7 @@ a {
     transform: scale(1.5);
     transition: all 3s ease-in-out;
     /* color: green; */
-    text-shadow: 0 4px 8px rgb(1, 31, 12);
+    text-shadow: 0 4px 8px rgba(63, 175, 104, 0.87);
   }
 }
 /* <!-- nav bar --> */
