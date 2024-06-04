@@ -762,7 +762,7 @@ div > span {
 
   .left-info-container {
     position: static; /* Make position static to remove absolute positioning */
-    width: 500px; /* Adjust width to fit the container */
+    width: 100%; /* Adjust width to fit the container */
     margin-bottom: 1rem; /* Add margin to separate it from the next section */
   }
 
