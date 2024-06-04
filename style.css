@@ -762,32 +762,16 @@ div > span {
 
   .left-info-container {
     position: static; /* Make position static to remove absolute positioning */
-    width: 100%; /* Adjust width to fit the container */
+    width: 500px; /* Adjust width to fit the container */
     margin-bottom: 1rem; /* Add margin to separate it from the next section */
   }
 
   .right-info-container {
     margin-top: 5px;
     width: 500px;
-    height: 500px;
+    height: 100%;
     padding: 1rem;
     border-radius: 10px;
     margin-left: 1vw; /* Adjust the margin as needed */
-  }
-
-  .grid-right-info1,
-  .grid-right-info2 {
-    grid-template-areas: none; /* Remove grid template areas if not needed */
-    grid-template-columns: 1fr; /* Make each grid item take full width */
-  }
-
-  .hexa1,
-  .hexa2,
-  .hexa3,
-  .hexa4,
-  .hexa5 {
-    height: 60px; /* Adjust height to auto */
-    width: 100%; /* Make hexagons take full width */
-    clip-path: none; /* Remove clip-path to make items rectangular */
   }
 }
