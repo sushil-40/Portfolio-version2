@@ -49,6 +49,7 @@ a {
 .wrapper {
   background: var(--body-bg);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .hidden {
@@ -63,42 +64,72 @@ a {
 
 /* <!-- hero section--> */
 
-.hero {
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: flex-end;
-
+.hero-section {
+  /* justify-content: space-between; */
+  /* flex-direction: column; */
+  /* align-items: flex-end; */
+  /* flex-wrap: wrap; */
   height: 90vh;
-  position: relative;
-  padding-top: 1px;
+  /* position: relative; */
+  padding-top: 2rem;
+  margin-top: 40px;
 
   background: var(--body-bg);
 }
 
-.info-container {
+.left-info-container {
   position: absolute;
+
   flex-direction: column;
 
-  top: 10vh;
-  left: -5vw;
+  /* top: 10vh; */
+  /* left: -5vw; */
   width: 550px;
   height: 300px;
   padding: 1rem;
-  border-radius: 38px;
+  border-radius: 10px;
   color: rgba(221, 241, 241, 0.973);
-  /* color: rgba(191, 192, 202, 0.685); */
 
-  /* background: radial-gradient(yellow, green); */
-  /* background: linear-gradient(
-    rgba(12, 12, 209, 0.678),
-    rgba(201, 201, 69, 0.753)
-  ); */
   backdrop-filter: blur(3px);
   /* letter-spacing: 0.1rem; */
   border: 2px solid aquamarine;
-  box-shadow: 0 0 0.5px aqua;
+  box-shadow: 0 0 0 0.5px aqua;
+  /* overflow: hidden; */
+  /* overflow-wrap: break-word; */
+  /* z-index: 2; */
   /* animation: glow 2s infinite; */
 }
+
+/*********** Starting border animation  ******/
+/* 
+.info-container::before {
+  left: -1vw;
+  top: -1vh;
+  content: "";
+  position: absolute;
+  width: 570px;
+  height: 310px;
+  background: linear-gradient(#00ccff, #d500f9);
+  animation: rotateInborder 10s linear infinite;
+  animation-delay: -10s;
+  border-radius: 20px;
+}
+.info-container::after {
+  content: "";
+  position: absolute;
+  background: var(--body-bg);
+  border-radius: 20px;
+  inset: 3px;
+}
+@keyframes rotateInborder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
 @keyframes glow {
   0% {
     box-shadow: 0 0 20px rgb(0, 195, 255);
@@ -123,7 +154,7 @@ a {
   position: absolute;
   left: -5px;
   top: -5px;
-
+  z-index: 2;
   animation: circle 18s infinite linear;
 }
 @keyframes circle {
@@ -202,7 +233,9 @@ a {
   white-space: nowrap;
   animation: slideIn 3s ease-in-out;
 }
-
+/* .info-container > p {
+  z-index: 2;
+} */
 /* Apply the animation to the auto-type span */
 .auto-type {
   color: aquamarine;
@@ -256,6 +289,7 @@ a {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+
   /* transform: scale(1); */
 }
 .cv .btn:hover {
@@ -292,13 +326,15 @@ a {
 
 .right-info-container {
   /* top: 10vh; */
-
-  justify-content: space-between;
+  /* position: absolute; */
+  /* flex-direction: column; */
+  justify-content: flex-end;
   align-items: flex-end;
 
-  left: 100vw;
-  margin: 10px 5px -20px 5px;
-  padding-left: 17rem;
+  margin-left: 20vw;
+  margin-top: -8vh;
+  /* margin: 10px 5px 0 20px; */
+  /* padding-left: 17rem; */
   width: 800px;
   height: 500px;
   /* background: radial-gradient(green, rgb(226, 96, 96)); */
@@ -714,3 +750,44 @@ div > span {
 /* <!-- about me section  --> */
 /* <!-- contact section  --> */
 /* <!-- footer section  --> */
+
+/****** Media Queries *********/
+
+/* Add this media query at the end of your CSS file */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center; /* Center the flex items if needed */
+  }
+
+  .left-info-container {
+    position: static; /* Make position static to remove absolute positioning */
+    width: 100%; /* Adjust width to fit the container */
+    margin-bottom: 1rem; /* Add margin to separate it from the next section */
+  }
+
+  .right-info-container {
+    margin-top: 5px;
+    width: 500px;
+    height: 500px;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-left: 1vw; /* Adjust the margin as needed */
+  }
+
+  .grid-right-info1,
+  .grid-right-info2 {
+    grid-template-areas: none; /* Remove grid template areas if not needed */
+    grid-template-columns: 1fr; /* Make each grid item take full width */
+  }
+
+  .hexa1,
+  .hexa2,
+  .hexa3,
+  .hexa4,
+  .hexa5 {
+    height: 60px; /* Adjust height to auto */
+    width: 100%; /* Make hexagons take full width */
+    clip-path: none; /* Remove clip-path to make items rectangular */
+  }
+}
