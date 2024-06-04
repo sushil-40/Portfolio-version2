@@ -665,13 +665,12 @@ a {
 /* <!-- nav bar --> */
 
 header {
+  position: sticky;
   box-shadow: var(--shadow);
   color: var(--text-color);
-  position: sticky;
   top: 0;
   background: var(--body-bg);
 }
-
 header .header {
   justify-content: space-between;
 
@@ -746,13 +745,13 @@ div > span {
   /* padding-top: 10rem; */
 }
 
-#hamburgerMenu {
+/* #hamburgerMenu {
   display: none;
   overflow-x: hidden;
 }
 [for="hamburgerMenu"] {
   display: none;
-}
+} */
 /* <!-- project section  --> */
 /* <!-- about me section  --> */
 /* <!-- contact section  --> */
@@ -762,7 +761,7 @@ div > span {
 
 /* Add this media query at the end of your CSS file */
 @media (max-width: 768px) {
-  [for="hamburgerMenu"] {
+  /* [for="hamburgerMenu"] {
     cursor: pointer;
     display: block;
   }
@@ -770,8 +769,8 @@ div > span {
     position: absolute;
     background: var(--body-bg);
     width: 250px;
-    height: 100vh;
-    top: 3.7rem;
+    height: 90vh;
+    top: 1.7rem;
     box-shadow: var(--shadow);
     left: 100vw;
     transition: all 0.5s;
@@ -784,8 +783,8 @@ div > span {
     line-height: 2.5rem;
   }
   #hamburgerMenu:checked + .menu {
-    left: calc(65vw);
-  }
+    left: calc(70vw);
+  } */
 
   .hero-section {
     flex-direction: column;
