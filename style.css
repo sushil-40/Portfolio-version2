@@ -594,7 +594,21 @@ div > span {
     height: 130px;
     width: 100px;
   }
+  .hire-me,
+  .chat,
+  .graduation,
+  .proj,
+  .exp {
+    font-size: 12px;
+  }
 
+  .icon-pointer,
+  .icon-chat,
+  .icon-graduation,
+  .icon-proj,
+  .icon-experience {
+    font-size: 15px;
+  }
   header > .header {
     flex-direction: column;
     align-items: flex-start;
