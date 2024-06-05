@@ -556,3 +556,91 @@ div > span {
     margin-left: 1vw;
   }
 }
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+
+  .left-container {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .right-container {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .grid-right-info {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .grid-right-info1,
+  .grid-right-info2 {
+    grid-template-areas: "hexa1" "hexa2" "hexa3" "hexa4" "hexa5";
+    grid-gap: 10px;
+  }
+
+  .hexa1,
+  .hexa2,
+  .hexa3,
+  .hexa4,
+  .hexa5 {
+    height: 100px;
+    width: 70px;
+  }
+
+  header > .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation {
+    font-size: 16px;
+  }
+
+  .skills-container > div i {
+    font-size: 2rem;
+  }
+
+  div > span {
+    margin-bottom: 30rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .left-container h1,
+  .p1,
+  .p2 {
+    font-size: 1rem;
+  }
+
+  .skills-container > div i {
+    font-size: 1.5rem;
+  }
+
+  div > span {
+    margin-bottom: 20rem;
+  }
+
+  .hire-me,
+  .chat,
+  .graduation,
+  .proj,
+  .exp {
+    font-size: 12px;
+  }
+
+  .icon-pointer,
+  .icon-chat,
+  .icon-graduation,
+  .icon-proj,
+  .icon-experience {
+    font-size: 20px;
+  }
+}
