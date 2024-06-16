@@ -668,9 +668,6 @@ div > span {
   .grid-right-info {
     flex-direction: column;
   }
-  .skills {
-    margin-top: 320px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -685,8 +682,5 @@ div > span {
 
   .left-container p {
     font-size: 18px;
-  }
-  .skills {
-    margin-top: 310px;
   }
 }
