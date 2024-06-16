@@ -210,6 +210,7 @@ a {
   border-radius: 40px;
   border: 1px solid var(--color-aqua);
   box-shadow: 0 4px 8px rgb(150, 129, 241);
+  flex-wrap: wrap;
 }
 .grid-right-info {
   height: 450px;
@@ -471,8 +472,9 @@ header {
   color: var(--text-color);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  /* z-index: 1000; */
   background: var(--body-bg);
+  /* flex-wrap: wrap; */
 }
 
 header > .header {
@@ -507,6 +509,7 @@ header > .header {
   color: var(--color-aqua);
   transition: all 0.3s;
 }
+
 /* <!-- skills section --> */
 .title {
   text-align: center;
@@ -517,12 +520,11 @@ header > .header {
   border-bottom: 3px solid var(--color-orange);
 }
 
-.skills {
+skills {
   margin-top: 5rem;
 }
 .skills-container {
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .skills-container > div {
@@ -540,180 +542,151 @@ div > span {
   /* padding-top: 10rem; */
 }
 
+/* progress bar  */
+
 .outer-progressbar {
-  height: 80px;
+  height: 20px;
   width: 80px;
-  padding: 9px;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -2px -4px 8px 2px rgba(255, 255, 255, 0.7);
   /* border: 1px solid orangered;
    */
   background: floralwhite;
-  border-radius: 50%;
+  border-radius: 20px;
   /* margin-bottom: 5rem; */
   position: relative;
 }
 .inner-progressbar {
-  height: 60px;
-  width: 60px;
+  height: 100%;
+  width: 85%;
   /* border: 1px solid orangered; */
-  border-radius: 50%;
+  background: green;
+  border-radius: 20px;
   box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    inset -4px -4px 6px -1px rgba(66, 143, 245, 0.7),
+    -0.5px -0.5px 0px rgb(163, 15, 106), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 #number {
   font-weight: 600;
   color: black;
-  font-size: 22px;
-}
-circle {
-  fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 10px;
-  stroke-dasharray: 370;
-  stroke-dashoffset: 370;
-  animation: anim 2s linear forwards;
+  font-size: 18px;
 }
 
-@keyframes anim {
-  100% {
-    stroke-dashoffset: 180.5;
+/* progress bar second type implementation  */
+
+/* Media queries */
+/* Media Queries */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  .left-container h1 {
+    font-size: 50px;
   }
 }
 
-svg {
-  position: absolute;
-  left: 102px;
-  top: 862px;
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+
+  .left-container h1 {
+    font-size: 45px;
+  }
+
+  .left-container .p1,
+  .left-container .p2 {
+    font-size: 20px;
+  }
+
+  .left-container p {
+    width: 100%;
+  }
+
+  .right-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .grid-right-info {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-/* Media queries */
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .header .logo,
+  .header nav.menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation li {
+    margin: 1rem 0;
+  }
+
+  .left-container h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
   .hero-section {
     flex-direction: column;
     align-items: center;
   }
 
-  .right-container {
-    margin-top: 5px;
-    width: 500px;
-    height: 500px;
-    padding: 1rem;
-    border-radius: 10px;
-    margin-left: 1vw;
-  }
-  header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background: var(--body-bg);
-  }
-  /* header {
-    display: none;
-  } */
-}
-@media (max-width: 480px) {
-  .container {
-    width: 90%;
-  }
-
   .left-container {
-    width: 100%;
-    height: auto;
-    padding: 0.5rem;
+    align-items: center;
+    text-align: center;
   }
 
-  .right-container {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    margin-top: 1rem;
+  .left-container h1 {
+    font-size: 35px;
   }
 
-  .grid-right-info {
-    width: 100%;
-    height: auto;
-    margin: 1rem 0;
+  .left-container .p1,
+  .left-container .p2 {
+    font-size: 18px;
   }
 
-  .grid-right-info1,
-  .grid-right-info2 {
-    grid-template-areas: "hexa1" "hexa2" "hexa3" "hexa4" "hexa5";
-    grid-gap: 10px;
-  }
-
-  .hexa1,
-  .hexa2,
-  .hexa3,
-  .hexa4,
-  .hexa5 {
-    height: 130px;
-    width: 100px;
-  }
-  .hire-me,
-  .chat,
-  .graduation,
-  .proj,
-  .exp {
-    font-size: 12px;
-  }
-
-  .icon-pointer,
-  .icon-chat,
-  .icon-graduation,
-  .icon-proj,
-  .icon-experience {
-    font-size: 15px;
-  }
-  header > .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navigation {
-    font-size: 16px;
-  }
-
-  .skills-container > div i {
+  .left-container .social-links a {
     font-size: 2rem;
   }
 
-  div > span {
-    margin-bottom: 30rem;
+  .right-container {
+    margin-top: 2rem;
+  }
+
+  .grid-right-info {
+    flex-direction: column;
+  }
+  .skills {
+    margin-top: 320px;
   }
 }
 
-@media (max-width: 320px) {
-  .left-container h1,
-  .p1,
-  .p2 {
-    font-size: 1rem;
+@media (max-width: 480px) {
+  .left-container h1 {
+    font-size: 30px;
   }
 
-  .skills-container > div i {
-    font-size: 1.5rem;
+  .left-container .p1,
+  .left-container .p2 {
+    font-size: 16px;
   }
 
-  div > span {
-    margin-bottom: 20rem;
+  .left-container p {
+    font-size: 18px;
   }
-
-  .hire-me,
-  .chat,
-  .graduation,
-  .proj,
-  .exp {
-    font-size: 12px;
-  }
-
-  .icon-pointer,
-  .icon-chat,
-  .icon-graduation,
-  .icon-proj,
-  .icon-experience {
-    font-size: 15px;
+  .skills {
+    margin-top: 320px;
   }
 }
